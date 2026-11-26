@@ -7,6 +7,10 @@ import java.util.TimeZone;
 @SpringBootApplication
 public class TaskboardApplication {
 
+	static {
+		TimeZone.setDefault(TimeZone.getTimeZone("Asia/Kolkata"));
+	}
+
 	public static void main(String[] args) {
 		TimeZone.setDefault(TimeZone.getTimeZone("Asia/Kolkata"));
 		SpringApplication.run(TaskboardApplication.class, args);
